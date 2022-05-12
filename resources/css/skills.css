@@ -1,0 +1,52 @@
+html{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#skills{
+    text-decoration: underline;
+}
+
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+}
+
+.skillsGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillUnit{
+    width: 20%;
+    margin: 5%;
+    text-align: center;
+}
+
+img{
+    width: 80%;
+}
