@@ -1,52 +1,109 @@
-html{
+html {
     padding-left: 50px;
     padding-right: 50px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-nav{
+nav {
     list-style-type: none;
     padding: 0;
 }
 
-nav li{
+nav li {
     display: inline;
     margin: 5px;
 }
 
-a{
-    color: black;
+a {
+    position: relative;
+    color: #000;
     text-decoration: none;
 }
 
-#skills{
+#projects a:hover::before,
+#about a:hover::before,
+#contact a:hover::before {
+    transform: scaleX(1);
+}
+
+#projects a::before,
+#about a::before,
+#contact a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+#skills {
     text-decoration: underline;
 }
 
-main{
+main {
     padding-left: 50px;
     padding-right: 50px;
     font-size: large;
 }
 
-.skillsGallery{
+.skillsGallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.skillUnit{
+.skillUnit {
     width: 20%;
     margin: 5%;
     text-align: center;
 }
 
-img{
+img {
     width: 80%;
+}
+
+.htmlBackground{
+    background-image: url(../media/HTMLT.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.htmlCode p{
+    opacity: 0;
+}
+
+.htmlCode {
+    margin: auto;
+    height: 180px;
+    width: 180px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    background-image: url(../media/HTML.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.htmlCode:hover p{
+    margin-left: 25px;
+    opacity: 1;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.htmlCode:hover {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
