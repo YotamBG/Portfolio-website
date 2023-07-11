@@ -1,0 +1,93 @@
+#about a:hover::before, #skills a:hover::before, #contact a:hover::before {
+    transform: scaleX(1);
+}
+
+#about a::before, #skills a::before, #contact a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+#projects{
+    text-decoration: underline;
+}
+
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+}
+
+.projectUnit{
+    margin: auto;
+    margin-bottom: 100px;
+    width: 50%;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+}
+
+a{
+    color: black !important;
+}
+
+img{
+    width: 500px;
+}
+
+.refoodpic{
+    width: 30%;
+}
+
+video{
+    width: 80%;
+}
+
+.refood{
+    width: 30%;
+    -webkit-filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
+    box-shadow: none;
+}
+
+.website{
+    width: 100%;
+}
+
+.refood:hover{
+    width: 30%;
+    -webkit-filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.2));
+    box-shadow: none;
+}
+
+.four-in-a-row{
+    width: 100%;
+}
+
+.neural-network{
+    width: 60%;
+}
+
+
+video{
+    position: relative;
+    top: 0;
+    transition: ease 0.5s;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+video:hover {
+    top: -5px;
+    box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,71 @@
+a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.contactGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactUnit{
+    width: 20%;
+    margin: 5%;
+    text-align: center;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+}
+
+.contactImg{
+    transition: 0.5s;
+    top: 0px;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
+}
+
+.contactImg:hover{
+    top: -10px;
+    filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.2));
+}
+
+img{
+    width: 80%;
+}
+
+
+
+.logo{
+    margin: auto;
+	width: 170px;
+    height: 170px;
+    transition: 0.5s;
+    background-size: contain;
+}
+
+.github{
+	background-image: url(../media/github1.png); 
+}
+
+.github:hover{
+	background-image: url(../media/github2.png);
+}
+
+
+.email{
+	background-image: url(../media/gmail1.png);
+}
+
+.email:hover{
+	background-image: url(../media/gmail2.png);
+}
+
+
+.linkedin{
+	background-image: url(../media/linkedin1.png);
+}
+
+.linkedin:hover{
+	background-image: url(../media/linkedin2.png);
+}
