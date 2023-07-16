@@ -69,3 +69,23 @@ img{
 .linkedin:hover{
 	background-image: url(../media/linkedin2.png);
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .contactGallery {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contactUnit{
+        width: 100%;
+    }
+}

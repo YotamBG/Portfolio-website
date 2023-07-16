@@ -1,8 +1,12 @@
-#about a:hover::before, #skills a:hover::before, #contact a:hover::before {
+#about a:hover::before,
+#skills a:hover::before,
+#contact a:hover::before {
     transform: scaleX(1);
 }
 
-#about a::before, #skills a::before, #contact a::before {
+#about a::before,
+#skills a::before,
+#contact a::before {
     content: "";
     position: absolute;
     display: block;
@@ -16,71 +20,71 @@
     transition: transform 0.3s ease;
 }
 
-#projects{
+#projects {
     text-decoration: underline;
 }
 
-main{
+main {
     padding-left: 50px;
     padding-right: 50px;
     font-size: large;
 }
 
-.projectUnit{
+.projectUnit {
     margin: auto;
     margin-bottom: 100px;
     width: 50%;
     text-align: center;
 }
 
-p{
+p {
     text-align: left;
 }
 
-a{
+a {
     color: black !important;
 }
 
-img{
+img {
     width: 500px;
 }
 
-.refoodpic{
+.refoodpic {
     width: 30%;
 }
 
-video{
+video {
     width: 80%;
 }
 
-.refood{
+.refood {
     width: 30%;
     -webkit-filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.2));
     box-shadow: none;
 }
 
-.website{
+.website {
     width: 100%;
 }
 
-.refood:hover{
+.refood:hover {
     width: 30%;
     -webkit-filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.2));
     box-shadow: none;
 }
 
-.four-in-a-row{
+.four-in-a-row {
     width: 100%;
 }
 
-.neural-network{
+.neural-network {
     width: 60%;
 }
 
 
-video{
+video {
     position: relative;
     top: 0;
     transition: ease 0.5s;
@@ -90,4 +94,43 @@ video{
 video:hover {
     top: -5px;
     box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.hoverMe {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    filter: opacity(0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+    video {
+        width: 80vw !important;
+    }
+
+    main {
+        width: 80vw;
+        padding: 0;
+    }
+
+    p {
+        width: 230px;
+        text-align: center;
+    }
+
+    .projectUnit {
+        margin: 0;
+        width: 80vw;
+        margin-bottom: 50px;
+    }
+
+    .hoverMe{
+        display: none;
+    }
+
+    .refood {
+        width: 30% !important;
+    }
 }

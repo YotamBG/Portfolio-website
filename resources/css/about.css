@@ -79,15 +79,15 @@ span.icon {
     display: inline-block;
 }
 
-.active > span.icon{
+.active>span.icon {
     transform: rotate(180deg);
 }
 
-button{
+button {
     padding-left: 0px !important;
 }
 
-img{
+img {
     position: relative;
     top: 0;
     transition: ease 0.5s;
@@ -97,4 +97,17 @@ img{
 img:hover {
     top: -5px;
     box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .opening {
+        display: block;
+    }
+
+    img {
+        width: 50vw !important;
+        height: 50vw !important;
+    }
 }

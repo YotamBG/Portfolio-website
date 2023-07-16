@@ -20,17 +20,17 @@ nav li {
     margin: 5px;
 }
 
-nav a{
+nav a {
     position: relative;
     color: #000;
     text-decoration: none;
 }
 
-nav a:not(.currentPage):hover::before{
+nav a:not(.currentPage):hover::before {
     transform: scaleX(1);
 }
 
-nav a:not(.currentPage)::before{
+nav a:not(.currentPage)::before {
     content: "";
     position: absolute;
     display: block;
@@ -52,4 +52,26 @@ main {
     padding-left: 50px;
     padding-right: 50px;
     font-size: large;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px;
+        line-height: 25px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    html {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
