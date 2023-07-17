@@ -99,11 +99,18 @@ video:hover {
 
 .hoverMe {
     position: absolute;
-    top: 30%;
-    left: 75%;
+    top: 10vw;
+    left: 115%;
     filter: opacity(0.5);
+    width: 130px !important;
 }
 
+.clickMe{
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     video {
@@ -130,6 +137,9 @@ video:hover {
         display: none;
     }
 
+    .clickMe{
+        display: block;
+    }
     .refood {
         width: 30% !important;
     }
