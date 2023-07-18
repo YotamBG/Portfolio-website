@@ -105,11 +105,15 @@ video:hover {
     width: 130px !important;
 }
 
-.clickMe{
+.clickMe {
     position: absolute;
     top: 40%;
     left: 85%;
     display: none;
+}
+
+video.loading {
+    background: black center center no-repeat;
 }
 
 @media only screen and (max-width: 600px) {
@@ -120,9 +124,11 @@ video:hover {
     main {
         width: 80vw;
         padding: 0;
+        margin: auto;
     }
 
     p {
+        margin: auto !important;
         width: 230px;
         text-align: center;
     }
@@ -133,13 +139,14 @@ video:hover {
         margin-bottom: 50px;
     }
 
-    .hoverMe{
+    .hoverMe {
         display: none;
     }
 
-    .clickMe{
+    .clickMe {
         display: block;
     }
+
     .refood {
         width: 30% !important;
     }

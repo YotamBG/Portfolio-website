@@ -100,14 +100,36 @@ img:hover {
 }
 
 
+.CVPIC {
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     .opening {
         display: block;
     }
 
-    img {
+    .myPic {
         width: 50vw !important;
         height: 50vw !important;
+    }
+
+    object {
+        display: none;
+    }
+
+    .CVPIC {
+        display: block;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    html {
+        height: 1100px;
     }
 }

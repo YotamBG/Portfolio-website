@@ -93,7 +93,11 @@ for (i = 0; i < coll.length; i++) {
             content.style.maxHeight = null;
             content.style.padding = '0px';
         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            if (window.innerWidth <= 800) {
+                content.style.maxHeight = 'fit-content';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
             content.style.padding = '40px';
         }
     });
