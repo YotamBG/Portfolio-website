@@ -107,7 +107,7 @@ video:hover {
 
 .clickMe {
     position: absolute;
-    top: 40%;
+    top: 45vw;
     left: 85%;
     display: none;
 }
