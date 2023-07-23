@@ -115,6 +115,10 @@ img:hover {
         height: 50vw !important;
     }
 
+    main{
+        padding: 15px;
+    }
+
     object {
         display: none;
     }
