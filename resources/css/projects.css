@@ -180,4 +180,8 @@ video {
     .refood {
         width: 30% !important;
     }
+
+    .video-container {
+     height: fit-content;   
+    }
 }
