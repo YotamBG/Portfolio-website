@@ -116,6 +116,36 @@ video.loading {
     background: black center center no-repeat;
 }
 
+.video-container {
+    position: relative;
+    width: fit-content;
+    /* set the desired width for the video */
+    height: 320px;
+    margin: auto;
+    /* set the desired height for the video */
+}
+
+img,
+video {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 @media only screen and (max-width: 600px) {
     video {
         width: 80vw !important;

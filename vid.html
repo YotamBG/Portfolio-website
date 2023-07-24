@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video with Loading GIF</title>
+  <style>
+    .video-container {
+      position: relative;
+      width: 640px; /* set the desired width for the video */
+      height: 360px; /* set the desired height for the video */
+    }
+
+    img, video{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7); /* Set the desired background color and transparency */
+    }
+  </style>
+</head>
+<body>
+
+<div class="video-container">
+  <div class="loading-overlay">
+    <!-- Insert your loading GIF here -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="Loading...">
+  </div>
+  <video onloadeddata="videoLoaded(this)" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+    <source src="https://www.dropbox.com/scl/fi/mdha91bcpvmdsue0eumxw/avance.mp4?rlkey=gk7oheobtapur5j0tekhaia62&raw=1" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  function videoLoaded(video) {
+    // Video has loaded, hide the loading GIF
+    video.parentElement.querySelector('.loading-overlay').style.display = 'none';
+    video.pause();
+  }
+</script>
+
+</body>
+</html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/header.css">
     <link rel="stylesheet" href="./resources/css/projects.css">
-    <!-- <script src="./resources/js/projects.js" defer></script> -->
+    <script src="./resources/js/projects.js" defer></script>
     <title>Yotam Ben-Gera | Projects</title>
     <link rel="icon" type="image/x-icon" href="./resources/media/favicon.ico">
 </head>
@@ -30,13 +30,19 @@
         <h2>Projects</h2>
         <div class="projectUnit" style="position: relative;">
             <h3>AVANCE Captial</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="website">
-                <source
-                    src="https://www.dropbox.com/scl/fi/mdha91bcpvmdsue0eumxw/avance.mp4?rlkey=gk7oheobtapur5j0tekhaia62&raw=1"
-                    type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source
+                        src="https://www.dropbox.com/scl/fi/mdha91bcpvmdsue0eumxw/avance.mp4?rlkey=gk7oheobtapur5j0tekhaia62&raw=1"
+                        type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>
                 🎯 Develop a professional website catering to the house leasing market.<br />
@@ -57,11 +63,17 @@
         </div>
         <div class="projectUnit">
             <h3>Healthy Harvest</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="website">
-                <source src="./resources/media/healthy harvest recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/healthy harvest recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Build a comprehensive, full-stack website for an E-Commerce platform focused on healthy
                 produce.</br>
@@ -74,18 +86,25 @@
         </div>
         <div class="projectUnit">
             <h3>Minimal Reddit</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="website">
-                <source src="./resources/media/reddit minimal recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/reddit minimal recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>
 
                 🎯 Design a dynamic website facilitating communication with Reddit. </br>
                 🏫 Enrolled in the Codecademy Fullstack Engineer course (2023, <a
                     href="https://github.com/YotamBG/reddit-minimal" target="_blank">code</a>)</br>
-                🤖 Utilizing ReactJS and ReduxJS to efficiently interface with the Reddit API, enabling seamless front-end
+                🤖 Utilizing ReactJS and ReduxJS to efficiently interface with the Reddit API, enabling seamless
+                front-end
                 integration with support for categories ("subreddits") and search functionality. Rigorous testing was
                 implemented using Jest and MSW. </br>
                 💡 This project demonstrates a streamlined Reddit communication platform with a well-integrated
@@ -94,10 +113,17 @@
         </div>
         <div class="projectUnit">
             <h3>Scratch game</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted">
-                <source src="./resources/media/superman recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/superman recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Create a simple game as an at-home project, inspired by an acceptance exam to a specialized cyber
                 class in secondary school. <br />🏫 Pardes Hanna Agricultural High School (2015, <a
@@ -107,10 +133,17 @@
         </div>
         <div class="projectUnit">
             <h3>REFOOD</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted" class="refood">
-                <source src="./resources/media/refood recording.webm" type="video/webm">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/refood recording.webm" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Develop an app for reducing food waste as part of a student-led hackathon. <br />🏫 UWC Atlantic
                 College (2020, <a href="https://snack.expo.dev/@yotambg/refood" target="_blank">code</a>) <br />🤖
@@ -119,11 +152,17 @@
         </div>
         <div class="projectUnit">
             <h3>The Art of Giving</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="website">
-                <source src="./resources/media/AOG recording.mp4" type="video/webm">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/AOG recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Create a website for an art auction, serving as a contribution to the philanthropy department of
                 AC. <br />🏫 UWC Atlantic College (2021) <br />🤖 WordPress, Elementor, custom HTML, CSS, JS with AJAX
@@ -134,12 +173,17 @@
         </div>
         <div class="projectUnit">
             <h3>Virus simulator</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted">
-                <source
-                    src="https://www.dropbox.com/scl/fi/edhau3s8p195j05eimfqd/Vsim.mp4?rlkey=bdvu9vgxju6j2ve6grf9n41qt&raw=1"
-                    type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="https://www.dropbox.com/scl/fi/edhau3s8p195j05eimfqd/Vsim.mp4?rlkey=bdvu9vgxju6j2ve6grf9n41qt&raw=1" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Develop a visual simulator for a mathematics paper, serving as the most extensive academic work in
                 the
@@ -153,10 +197,17 @@
         </div>
         <div class="projectUnit">
             <h3>Arduino project</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted">
-                <source src="./resources/media/circuit recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="./resources/media/circuit recording.mp4"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/circuit recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Design a kindergarten game for improving interest through interactivity. <br />🏫 UWC Atlantic
                 College DT (2020,
@@ -168,11 +219,17 @@
 
         <div class="projectUnit">
             <h3>Four in a row</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="four-in-a-row">
-                <source src="./resources/media/four-in-a-row recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="./resources/media/circuit recording.mp4"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/four-in-a-row recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Develop a simple game for the Technion University. <br />🏫 Technion University (2018,
                 <a href="https://onlinegdb.com/4_3iyIPoc" target="_blank">code</a>)<br />🤖
@@ -183,11 +240,17 @@
 
         <div class="projectUnit">
             <h3>Neural network</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted"
-                class="neural-network">
-                <source src="./resources/media/neural-network recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="./resources/media/circuit recording.mp4"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/neural-network recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Explore the fundamentals of the mathematics behind neural networks used for machine learning.
                 <br />🏫 UWC Atlantic College (2020, <a
@@ -201,10 +264,17 @@
 
         <div class="projectUnit">
             <h3>Google Calander API</h3>
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" muted="muted">
-                <source src="./resources/media/calendar recording.mp4" type="video/mp4">
-                </source>
-            </video>
+            <div class="video-container">
+                <div class="loading-overlay website">
+                    <!-- Insert your loading GIF here -->
+                    <img src="./resources/media/circuit recording.mp4"
+                        alt="Loading...">
+                </div>
+                <video onloadeddata="videoLoaded(this)" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted="muted" class="website">
+                    <source src="./resources/media/calendar recording.mp4" type="video/mp4">
+                </video>
+            </div>
             <br />
             <p>🎯 Import the school calendar from ISAMS into Google Calendar. <br />🏫 UWC Atlantic College (2020, <a
                     href="https://script.google.com/d/1AAUCvTjs1e6pgRxe7cBA5dreDmRIrH88vqVC2AoKTc7_TyBsxuWGE9Yd/edit?usp=sharing"
