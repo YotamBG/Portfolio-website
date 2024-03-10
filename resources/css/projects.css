@@ -100,16 +100,17 @@ video:hover {
 .hoverMe {
     position: absolute;
     top: 10vw;
-    left: 115%;
+    left: 80%;
     filter: opacity(0.5);
     width: 130px !important;
 }
 
 .clickMe {
     position: absolute;
-    top: 45vw;
-    left: 85%;
+    top: 88vw;
+    left: 60%;
     display: none;
+    filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.545));
 }
 
 video.loading {
